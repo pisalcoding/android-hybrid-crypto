@@ -2,7 +2,7 @@
 
 # HybridCrypto
 
-HybridCrypto is simple implementation of hybrid cryptography recommended by  [OWASP](https://mobile-security.gitbook.io/mobile-security-testing-guide/general-mobile-app-testing-guide/0x04g-testing-cryptography).
+HybridCrypto is simple customizable Android implementation of hybrid cryptography (AES+RSA+Hash) recommended by [OWASP](https://mobile-security.gitbook.io/mobile-security-testing-guide/general-mobile-app-testing-guide/0x04g-testing-cryptography).
 
 ## Usage
 
