@@ -17,7 +17,7 @@ repositories {
 > Step 2: Add this your app build.gradle
 ```java
 dependencies {
-    implementation 'com.github.utngypisal:hybrid-crypto:1.0.0'
+    implementation 'com.github.pisalcoding:hybrid-crypto:1.0.0'
 }
 ```
 
