@@ -6,7 +6,6 @@ import me.pisal.hybridcrypto.rsa.RSACipher
 import java.io.Serializable
 import java.security.MessageDigest
 import java.security.SecureRandom
-import kotlin.experimental.and
 
 /**
  * A combined crypto mechanism of
@@ -67,15 +66,24 @@ class HybridCrypto private constructor() {
     }
 
     private fun sha512(message: String): String {
+        val bytes = message.toByteArray()
         val md = MessageDigest.getInstance("SHA-512")
-        val digest = md.digest(message.toByteArray())
-        val builder = StringBuilder()
-        for (i in digest.indices) {
-            builder.append(((digest[i] and 0xff.toByte()) + 0x100)
-                .toString(16)
-                .substring(1))
-        }
-        return builder.toString()
+        val digest = md.digest(bytes)
+        return digest.fold("") { str, it -> str + "%02x".format(it) }
+
+//        val bytes = input.toByteArray()
+//        val md = MessageDigest.getInstance("SHA-512")
+//        val digest = md.digest(bytes)
+//        return digest.fold("") { str, it -> str + "%02x".format(it) }
+//        val md = MessageDigest.getInstance("SHA-512")
+//        val digest = md.digest(message.toByteArray())
+//        val builder = StringBuilder()
+//        for (i in digest.indices) {
+//            builder.append(((digest[i] and 0xff.toByte()) + 0x100)
+//                .toString(16)
+//                .substring(1))
+//        }
+//        return builder.toString()
     }
 
     data class Configuration(

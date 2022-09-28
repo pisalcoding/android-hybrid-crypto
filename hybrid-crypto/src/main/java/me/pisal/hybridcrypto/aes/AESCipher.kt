@@ -13,8 +13,20 @@ import javax.crypto.spec.PBEKeySpec
 import javax.crypto.spec.SecretKeySpec
 
 class AESCipher(
+    /**
+     * Recommended by OWASP: 16 (bytes)
+     */
     private val aesKeySizeInBytes: Int,
+
+    /**
+     * Recommended by OWASP: "AES/CBC/PKCS7Padding"
+     */
     private val aesMode: String = "AES/CBC/PKCS7Padding",
+
+    /**
+     * Recommended: 100 good an equilibrium between robustness and performance.
+     * The bigger, the more secure, but slower at the same time.
+     */
     private val keyIterationCount: Int = 100
 ) {
 
