@@ -41,7 +41,7 @@ afterEvaluate {
 
                 groupId = 'com.github.pisalcoding'
                 artifactId = 'hybrid-crypto'
-                version = '1.0.1'
+                version = '1.0.2'
             }
         }
     }
