@@ -40,8 +40,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.pisalcoding'
-                artifactId = 'hybrid-crypto'
-                version = '1.0.2'
+                artifactId = 'android-hybrid-crypto'
+                version = '1.0.3'
             }
         }
     }
