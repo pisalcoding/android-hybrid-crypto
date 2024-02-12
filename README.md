@@ -1,6 +1,7 @@
 
 
-# AndroidHybridCrypto
+# Android Hybrid Crypto (AES + RSA + SHA + PKI)
+[![](https://jitpack.io/v/pisalcoding/android-hybrid-crypto.svg)](https://jitpack.io/#pisalcoding/android-hybrid-crypto)
 
 HybridCrypto is simple customizable Android implementation of hybrid cryptography (AES+RSA+Hash) recommended by [OWASP](https://mobile-security.gitbook.io/mobile-security-testing-guide/general-mobile-app-testing-guide/0x04g-testing-cryptography).
 
